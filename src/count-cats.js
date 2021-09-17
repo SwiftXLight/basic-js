@@ -15,13 +15,13 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default function countCats(matrix ) {
-    let cats = 0;
-    for(j = 0; j < matrix.length; j++){
-      for(i = 0; i < matrix[j].length; i++){
-        if(matrix[j][i] === "^^"){
+  let cats = 0;
+  for (let j = 0; j < matrix.length; j++) {
+    for (let i = 0; i < matrix[j].length; i++) {
+      if (matrix[j][i] === "^^") {
         cats++;
-       } 
       }
     }
-      return cats;
+  }
+  return cats;
 }
